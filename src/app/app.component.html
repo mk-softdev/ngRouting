@@ -1,0 +1,37 @@
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+      <p class="collapsePara">
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#chapterone" role="button" aria-expanded="false" aria-controls="chapter one">
+          Chapter One
+        </a>
+      </p>
+<div class="collapse"  id="chapterone">
+  <p class="child_page">
+    <a class="btn btn-sm btn-dark text-white active" aria-current="Home" [routerLink]="['/']" routerLinkActive="router-link-active">Home</a>
+  <br>
+    <a class="btn btn-sm btn-dark text-white"  [routerLink]="['/users']">Users</a>
+  <br>
+    <a class="btn btn-sm btn-dark text-white"  [routerLink]="['/categories']">Categoreis</a>
+  </p>
+  <!-- <li class="nav-item">
+    <a class="nav-link disabled">Disabled</a>
+  </li> -->
+</div>
+</div>
+<div class="col-md-9">
+  <div class="row">
+    <div class="col-md-12">
+      <router-outlet></router-outlet>
+      <!-- <app-home></app-home>
+      <app-users></app-users>
+      <app-categories></app-categories> -->
+    </div>
+  </div>
+  
+</div>
+</div>
+</div>
+
